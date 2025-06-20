@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maksen Mouhou - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="assets/site-logo.png" alt="Logo" class="logo-image">
+        <h1 class="logo">MAKSEN MOUHOU</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about"><span data-lang="fr">Àpropos</span><span data-lang="en" style="display:none;">About</span></a></li>
+        <li><a href="#parcours"><span data-lang="fr">Parcours</span><span data-lang="en" style="display:none;">Journey</span></a></li>
+        <li><a href="#skills"><span data-lang="fr">Compétences</span><span data-lang="en" style="display:none;">Skills</span></a></li>
+        <li><a href="#projects"><span data-lang="fr">Projets</span><span data-lang="en" style="display:none;">Projects</span></a></li>
+        <li><a href="#contact"><span data-lang="fr">Contact</span><span data-lang="en" style="display:none;">Contact</span></a></li>
+        <li>
+          <select id="language-switcher">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </select>
+        </li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2 data-i18n="welcome">Bienvenue sur mon portfolio</h2>
+      <p data-i18n="intro">Je suis étudiant en BUT informatique passionné par le développement.</p>
+    </section>
+
+    <section id="about">
+      <h2 data-i18n="about_title">À propos de moi</h2>
+      <p>Je m'appelle Maksen Mouhou, je suis actuellement en formation dans un BUT Informatique à l'IUT d'Orsay de l'Université Paris Saclay. Depuis mon enfance, je suis passionné par les nouvelles technologies et les jeux vidéo. C'est au lycée, en suivant un bac STI2D, que j'ai vraiment pris conscience de ma passion pour l'informatique.</p>
+      <div class="gallery">
+        <div>
+          <h3>Moi</h3>
+          <img class="gallery-image" src="assets/moi.png" alt="Moi">
+        </div>
+        <div>
+          <h3>La nourriture et moi</h3>
+          <p>J'ai toujours été très gourmand et friand de spécialités étrangères, surtout asiatiques 🍣🍜, alors voici une compilation de mes meilleurs repas partagés avec mes amis.</p>
+          <div class="food-images">
+            <img class="gallery-image" src="assets/ramen1.png" alt="Moi en train de manger des ramens avec mon ami">
+            <img class="gallery-image" src="assets/ramen2.png" alt="Les ramens">
+            <img class="gallery-image" src="assets/sushi.png" alt="Mes amis et moi après avoir mangé de bons sushis">
+          </div>
+        </div>
+        <div>
+          <h3>Le sport et moi</h3>
+          <p>J'ai toujours été passionné par le sport 🏋, surtout l'escalade...</p>
+          <video controls>
+            <source src="assets/escalade.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div>
+          <p>J'ai aussi participé à beaucoup de compétitions, que ce soit en foot, natation ou escalade, voici les médailles que j'ai gagnées.</p>
+          <img class="gallery-image" src="assets/medailles.png" alt="Mes médailles">
+          <p>Mais surtout, mon plus grand accomplissement, le championnat de France avec mon lycée, où nous sommes arrivés 8ème. Ce fut une expérience magnifique. Voici un petit extrait.</p>
+          <img class="gallery-image" src="assets/championat.png" alt="Championnat de France">
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours">
+      <h2>
+        <span data-lang="fr">Parcours</span>
+        <span data-lang="en" style="display:none;">Journey</span>
+      </h2>
+      <ul class="timeline">
+        <li><h3>Collège</h3> <span>— La Tuilerie (2020)</span></li>
+        <li><h3>Lycée Général</h3> <span>— Robert Doisneau (2023)</span></li>
+        <li><h3>Bac Technologique</h3> <span>— Spécialité SIN</span></li>
+        <li><h3>Études Supérieures</h3> <span>— IUT ORSAY (2027)</span></li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2 data-i18n="skills_title">Mes compétences</h2>
+      <div class="skills-cloud">
+        <!-- Logos répétés 2x pour boucle infinie -->
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">HTML</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">CSS</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">JS</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">React</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">Node</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">Figma</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">Java</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">Git</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">GitHub</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="HTML"></span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse">Eclipse</span>
+              <!-- Clone des logos pour scroll infini -->
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">HTML</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">CSS</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS">JS</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">React</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node">Node</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">Python</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">Figma</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">Java</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">Git</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">GitHub</span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="HTML"></span>
+        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg" alt="Eclipse">Eclipse</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="projects_title">Mes projets</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Projet CWAD</h3>
+          <p>Création d'un parc à thème et d'un site web dédié</p>
+          <a href="https://github.com/neskam91" target="_blank">Voir sur GitHub</a>
+          <h4>Outils utilisés</h4>
+          <div class="project-tools">
+            <img src="assets/html-logo.png" alt="HTML">
+            <img src="assets/css-logo.png" alt="CSS">
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Projet BD</h3>
+          <p>Création d'une base de données pour une entreprise</p>
+          <a href="https://github.com/neskam91" target="_blank">Voir sur GitHub</a>
+          <h4>Outils utilisés</h4>
+          <div class="project-tools">
+            <img src="assets/sql-logo.png" alt="SQL">
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Projet Transverse</h3>
+          <p>Création d'une application administrateur sur la gestion des maisons de la Cité Universitaire</p>
+          <a href="https://github.com/neskam91" target="_blank">Voir sur GitHub</a>
+          <h4>Outils utilisés</h4>
+          <div class="project-tools">
+            <img src="assets/java-logo.png" alt="Java">
+            <img src="assets/figma-logo.png" alt="Figma">
+            <img src="assets/github-logo.png" alt="GitHub">
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Projet Jeux vidéo</h3>
+          <p>Création d'un jeu vidéo en 2D</p>
+          <a href="https://github.com/neskam91" target="_blank">Voir sur GitHub</a>
+          <h4>Outils utilisés</h4>
+          <div class="project-tools">
+            <img src="assets/c++-logo.png" alt="C++">
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Projet BD2</h3>
+          <p>Création d'une base de données sur un jeu vidéo</p>
+          <a href="https://github.com/neskam91" target="_blank">Voir sur GitHub</a>
+          <h4>Outils utilisés</h4>
+          <div class="project-tools">
+            <img src="assets/sql-logo.png" alt="SQL">
+            <img src="assets/plsql-logo.png" alt="PL/SQL">
+            <img src="assets/json-logo.png" alt="JSON">
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Projet Réseau</h3>
+          <p>Création d'une connexion réseau entre différents appareils</p>
+          <a href="https://github.com/neskam91" target="_blank">Voir sur GitHub</a>
+          <h4>Outils utilisés</h4>
+          <div class="project-tools">
+            <img src="assets/marionnet-logo.png" alt="Marionnet">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ambition">
+      <h2>
+        <span data-lang="fr">Perspective d'avenir</span>
+        <span data-lang="en" style="display:none;">Ambition</span>
+      </h2>
+      <p>
+        <span data-lang="fr">
+          Mon objectif professionnel est clair : avoir un métier dans le domaine de la <span class="highlight">BIG DATA</span>. Cette passion me suit depuis plusieurs années. Je me forme en autonomie via <span class="highlight">Root-Me</span> ou <span class="highlight">Hack The Box</span> et j'explore sans cesse les enjeux de la sécurité informatique.
+        </span>
+        <span data-lang="en" style="display:none;">
+          My career goal is to have a job in <span class="highlight">BIG DATA</span>. I have a strong personal interest in digital security and I train on my own using platforms like <span class="highlight">Root-Me</span> and <span class="highlight">Hack The Box</span>.
+        </span>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>
+        <span data-lang="fr">Contact</span>
+        <span data-lang="en" style="display:none;">Contact</span>
+      </h2>
+      <form>
+        <input type="text" placeholder="Votre nom / Your name" required>
+        <input type="email" placeholder="Votre email / Your email" required>
+        <textarea rows="5" placeholder="Votre message / Your message" required></textarea>
+        <button type="submit">
+          <span data-lang="fr">Envoyer</span>
+          <span data-lang="en" style="display:none;">Send</span>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Maksen Mouhou. <span data-lang="fr">Tous droits réservés.</span><span data-lang="en" style="display:none;">All rights reserved.</span></p>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/maksenmouhou/"><img src="assets/linkedin-logo.png" alt="LinkedIn"></a>
+      <a href="https://github.com/neskam91"><img src="assets/github-logo.png" alt="GitHub"></a>
+      <a href="file:///C:/Users/makse/OneDrive/COURS%20IUT/R102-html/portfolio/assets/CV.pdf" class="cv-button">
+        <span data-lang="fr">Télécharger CV</span>
+        <span data-lang="en" style="display:none;">Download CV</span>
+      </a>
+    </div>
+  </footer>
+</body>
+</html>
